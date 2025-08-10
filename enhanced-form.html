@@ -73,7 +73,93 @@
             <img src="images/images (4).jpeg" alt="City Sports Club Team" width="400" />
         </section>
 
-        
+        <section>
+            <h2>Join a Sport - Registration Form</h2>
+            <form action="#" method="post" nonalidate>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name:</label><br />
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        required
+                        minlength="3"
+                        placeholder="Your full name"
+                    /><br /><br />
+
+                    <label for="email">Email Address:</label><br />
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="example@mail.com"
+                    /><br /><br />
+
+                    <label for="phone">Phone Number:</label><br />
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        pattern="[0-9]{10}"
+                        required
+                        placeholder="10-digit number"
+                    /><br /><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sport Selection</legend>
+
+                    <label for="sport">Choose a Sport:</label><br />
+                    <select id="sport" name="sport" required>
+                        <option value="">--Select a sport--</option>
+                        <option value="soccer">Soccer</option>
+                        <option value="basketball">Basketball</option>
+                        <option value="tennis">Tennis</option>
+                        <option value="swimming">Swimming</option>
+                        <option value="track-field">Track and Field</option>
+                    </select><br /><br />
+
+                    <label for="startdate">Preferred Start Date:</label><br />
+                    <input type="date" id="startdate" name="startdate" required /><br /><br />
+
+                    <label>Skill Level:</label><br />
+                    <input type="radio" id="beginner" name="skill" value="beginner" required />
+                    <label for="beginner">Beginner</label><br />
+                    <input
+                        type="radio"
+                        id="intermediate"
+                        name="skill"
+                        value="intermediate"
+                    />
+                    <label for="intermediate">Intermediate</label><br />
+                    <input type="radio" id="advanced" name="skill" value="advanced" />
+                    <label for="advanced">Advanced</label><br /><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <label for="notes">Any special requirements?</label><br />
+                    <textarea
+                        id="notes"
+                        name="notes"
+                        rows="4"
+                        cols="40"
+                        placeholder="Let us know if you have any special needs"
+                    ></textarea
+                    ><br /><br />
+
+                    <input type="checkbox" id="terms" name="terms" required />
+                    <label for="terms">I agree to the terms and conditions</label
+                    ><br /><br />
+                </fieldset>
+
+                <button type="submit">Register Now</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
     </main>
 </body>
 </html>
